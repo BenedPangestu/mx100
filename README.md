@@ -31,22 +31,16 @@ Import file berikut ke Postman:
 
 ---
 
-## 🎤 Tips Presentasi Projek
+## 🎤 FLOW PROJECT
 
-Saat mempresentasikan:
-
-1. **Jelaskan Role & Use-case**
+1. **Role & Use-case**
    > "Saya membagi sistem menjadi dua role, Employer dan Freelancer, dengan pembatasan akses menggunakan middleware role-based."
 
-2. **Tunjukkan Autentikasi Sanctum**
+2. **Autentikasi Sanctum**
    > "Saya menggunakan Laravel Sanctum untuk autentikasi token, agar lebih ringan dan cocok untuk API-only project."
 
-3. **Tampilkan Alur Melalui Postman**
+3. **Alur Melalui Postman**
    > "Employer membuat pekerjaan → Freelancer apply → Employer melihat CV."
 
-4. **Jelaskan Business Logic**
+4. **Business Logic**
    > "Freelancer hanya bisa melamar satu kali ke setiap pekerjaan. Employer hanya bisa melihat pelamar untuk job miliknya."
-
-5. **Sebutkan Skalabilitas**
-   > "Struktur kode modular dan mengikuti Laravel standard, mudah untuk dikembangkan lebih lanjut."
-
