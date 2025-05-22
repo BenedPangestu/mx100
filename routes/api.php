@@ -34,6 +34,6 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Freelancer
     Route::get('/jobs', [JobController::class, 'index']);
-    Route::post('/jobs/{id}/apply', [ApplicationController::class, 'store']);
+    Route::post('/jobs/{id}/apply', [ApplicationController::class, 'apply']);
     Route::get('/my-applications', [ApplicationController::class, 'myApplications']);
 });

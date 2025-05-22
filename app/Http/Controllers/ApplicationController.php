@@ -9,8 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class ApplicationController extends Controller
 {
-    // Freelancer apply ke pekerjaan (hanya sekali)
-    public function store(Request $request, $jobId)
+    public function apply(Request $request, $jobId)
     {
         $this->authorizeRole('freelancer');
 
@@ -25,7 +24,7 @@ class ApplicationController extends Controller
         }
 
         $request->validate([
-            'cv' => 'required|string', // CV bisa berupa path file atau isi
+            'cv' => 'required|string',
         ]);
 
         $application = Application::create([
